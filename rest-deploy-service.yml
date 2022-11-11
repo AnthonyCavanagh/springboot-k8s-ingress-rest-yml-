@@ -2,9 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: rest-service
-  namespace: ingress-rest
 spec:
-  type: ClusterIP
   selector:
     app: rest-service
   ports:
@@ -17,7 +15,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: rest-service
-  namespace: ingress-rest
 spec:
   selector:
       matchLabels:
