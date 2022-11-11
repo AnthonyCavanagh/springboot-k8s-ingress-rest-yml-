@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
         - name: rest-service
-          image: tonycav/myrepo:k8-rest-v1
+          image: tonycav/myrepo:k8-rest-v2
           ports:
           - containerPort: 8080
           
