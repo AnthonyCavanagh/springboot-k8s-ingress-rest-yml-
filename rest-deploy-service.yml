@@ -4,6 +4,7 @@ metadata:
   name: rest-service
   namespace: ingress-rest
 spec:
+  type: ClusterIP
   selector:
     app: rest-service
   ports:
